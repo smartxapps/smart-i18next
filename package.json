@@ -1,0 +1,70 @@
+{
+  "name": "smart-i18next",
+  "version": "1.0.0",
+  "description": "internationalization and localization package",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hthub247/smart-i18next.git"
+  },
+  "keywords": [
+    "translate"
+  ],
+  "author": "HT-HUB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hthub247/smart-i18next.git/issues"
+  },
+  "homepage": "https://github.com/hthub247/smart-i18next.git#readme",
+  "dependencies": {
+    "i18n": "^0.15.1",
+    "i18next": "^23.5.1",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "i18next-http-backend": "^2.2.2",
+    "react-i18next": "^13.2.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "@types/react-test-renderer": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-next": "^12.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-i18next": "6.0.0-2",
+    "eslint-plugin-jest-dom": "^4.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "gts": "^3.1.0",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
+    "rollup": "^4.0.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.2.2"
+  }
+}
