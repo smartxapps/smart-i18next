@@ -1,5 +1,5 @@
 {
-  "name": "smart-i18next",
+  "name": "@smartxapps/smart-i18next",
   "version": "1.0.0",
   "description": "internationalization and localization package",
   "main": "./lib/cjs/index.js",
